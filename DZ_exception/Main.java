@@ -15,7 +15,14 @@ public class Main {
     public static void main(String[] args) throws NewException {
 
         Maney maney = new Maney();
-        maney.getManey(50); // Меняйте цифру (maney > 1000)
+        maney.getManey(10000); // Меняйте цифру (maney > 1000)
+        //maney.getManey(999);
+
+
+        dateOrder fuel = new dateOrder();
+        fuel.getDateOrder(true);
+        //fuel.getDateOrder(false);
+
 
         VanAnimalCargo elephant = new VanAnimalCargo();
         elephant.calculateCargo(10, "животные", 500);
