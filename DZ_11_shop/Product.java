@@ -2,7 +2,7 @@ package ru.javabegin.oop;
 
 import java.util.Objects;
 
-public class Product {
+public class Product implements Comparable<Product>{
 
     public String product;
     public int quantity;
@@ -36,5 +36,9 @@ public class Product {
     @Override
     public int hashCode() {
         return Objects.hash(product, quantity);
+    }
+    @Override
+    public int compareTo(Product o) {
+        return product.compareTo(o.getProduct());
     }
 }
